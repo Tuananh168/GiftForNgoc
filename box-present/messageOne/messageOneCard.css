@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 500 100%/1.4 system-ui;
+    background-color: #ccc;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 0rem;
+    padding: 1rem;
+}
+
+.card {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 2rem;
+    background: #f8f3e8;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2), 0 0 30px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.card-group {
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+}
+
+.card>img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 600/450;
+}
+
+.card>h2 {
+    margin-top: 1rem;
+    font-family: "Kalam", cursive;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #4a4a7d;
+    text-align: center;
+}
+
+.card>p {
+    font-family: "Kalam", cursive;
+    font-size: 0.8rem;
+    color: #5e5e89;
+    text-align: center;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .card {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        background: #f8f3e8;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        padding: 0 !important;
+    }
+    .card:hover {
+        z-index: 999;
+        max-height: 400px;
+        width: 200px;
+        max-width: 200px;
+        border: none !important;
+        border-right: 60px solid transparent !important;
+        border-bottom: 20px solid transparent !important;
+        margin-right: -20px;
+        -webkit-transform: translate(-30px, -50px);
+        transform: translate(-30px, -50px);
+    }
+    .card-group {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }
+    .card>img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 600/450;
+    }
+    .card>h2 {
+        margin-top: 0.5rem;
+        font-family: "Kalam", cursive;
+        font-weight: normal;
+        font-size: 0.5rem;
+        color: #4a4a7d;
+        text-align: center;
+    }
+    .card>p {
+        font-family: "Kalam", cursive;
+        font-size: 0.4rem;
+        color: #5e5e89;
+        text-align: center;
+    }
+}
